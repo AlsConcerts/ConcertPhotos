@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Concert Photo Gallery</h1>
+        </header>
+        
+        <section class="upload-section">
+            <h2>Upload New Photos</h2>
+            <form id="upload-form">
+                <div class="form-group">
+                    <label for="photo-upload">Select Photos:</label>
+                    <input type="file" id="photo-upload" accept="image/*" multiple>
+                </div>
+                <div class="form-group">
+                    <label for="band-name">Band Name:</label>
+                    <input type="text" id="band-name" placeholder="Enter band name">
+                </div>
+                <button type="submit" id="upload-button">Upload Photos</button>
+            </form>
+        </section>
+
+        <section class="search-section">
+            <h2>Find Photos</h2>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search by band name...">
+                <button id="search-button">Search</button>
+                <button id="show-all-button">Show All</button>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Photo Gallery</h2>
+            <p id="gallery-count"></p>
+            <div id="gallery" class="gallery-container"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
